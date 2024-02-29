@@ -82,6 +82,7 @@ public class MarkovChain {
             currentWord = nextWords.get(r.nextInt(nextWords.size()));
             // Append the following word to the generated text
             sb.append(" ").append(currentWord);
+            System.out.println(i);
         }
 
         // Return the generated text
