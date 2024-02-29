@@ -32,7 +32,6 @@ public class Main {
             pw.println(generatedText); // Writes generated text to output file
         }
 
-        System.out.println("Generated text:"); // Prints header for generated text
-        System.out.println(generatedText); // Prints generated text
+        System.out.println("Generated text"); // Confirms the printed text
     }
 }
