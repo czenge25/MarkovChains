@@ -47,8 +47,9 @@ public class MarkovChain {
         String currentWord = startingWords.get(r.nextInt(startingWords.size()));
         sb.append(currentWord);
 
-        for (int i = 1; i < wordCount; i++) {
+        for (int i = 1; i <= wordCount; i++) {
             List<String> nextWords = hashmap.get(currentWord);
+            System.out.println(i);
             if (nextWords == null || nextWords.isEmpty()) {
                 break;
             }
